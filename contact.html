@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/modernizr.custom.js"></script>
+<title>AZMT contact</title>
+
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64472002-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+    <div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Send a message</h3>
+				<div>
+					<form action="post.php" method="post">
+					    <input type="text" name="name" value="NAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+					    <input type="text" name="email" required="ruquired" value="EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"> <br>
+                        <textarea class="message" name="message" placeholder="WRITE MESSAGE..." rows="5"></textarea> <br>
+                        <input type="submit" class="send" value="Send">
+					</form> 
+					<input class="md-close" type="image" src="image/icon-close.png" alt="Close">
+				</div>
+			</div>
+		</div>
+	<header>
+		<a id="home" href="index.html"></a>
+		<div class="write">
+			<div class="mail"><button class="md-trigger" data-modal="modal-1">Write to us.</button> <br>
+						  We will be glad to answer
+			</div>
+		</div>
+	</header>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.2835403514612!2d30.457131749680954!3d50.44916397490755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc27fad62691%3A0xf1538d2ecb5ff172!2z0J_Qu9C-0YnQsCDQl9C90LDQvdGM!5e0!3m2!1sru!2sua!4v1431865915063" width="100%" height="100%"></iframe>
+
+	<footer>
+		<div class="social"><a class="facebook" href="https://www.facebook.com/azmtproduction?__mref=message_bubble" target="_blank"></a>
+								<a class="youtube" href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"></a></div>
+			<div class="copyright">copyright 2016 azmt</div>	
+				<div class="menu">
+				<ul class="nav">
+				    <li><a href="index.html">home</a></li>
+					<li><a href="work.html">our work</a></li>
+					<li><div class="contact"><a href="contact.html" class="last">contact</a></div></li>
+				</ul>
+			</div>
+	</footer>
+    <div class="md-overlay"></div>
+
+<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
+
+</body>
+</html>

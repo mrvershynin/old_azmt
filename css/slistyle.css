@@ -1,0 +1,36 @@
+#slider-wrap{ /* Оболочка слайдера и кнопок */
+	width:100%; 
+	height:100%; 
+	position: fixed;
+	bottom: 0px;
+	}
+#slider{ /* Оболочка слайдера */
+	width:100%;
+	height:100%;
+    overflow: visible;
+	position:relative;
+	}
+.slide { /* Слайд */
+	width: 100%;
+	height: 100%;
+	}
+
+#prewbutton, #nextbutton { /* Ссылка "Следующий" и "Педыдущий" */
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../image/arrowBg.png) 0px -50px no-repeat;
+	z-index: 4;
+	outline: none !important;}
+#prewbutton{left:50px;}
+#nextbutton{
+	right: 50px;
+	background: url(../image/arrowBg.png) -50px -50px no-repeat;}
+#prewbutton:hover{
+	background: url(../image/arrowBg.png) 0px 0px no-repeat;}
+#nextbutton:hover {
+	background: url(../image/arrowBg.png) -50px 0px no-repeat;}
